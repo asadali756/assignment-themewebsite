@@ -1,0 +1,127 @@
+*{
+
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Libre Baskerville", serif;
+
+}
+:root{
+    background-color: #FFF;
+    color: #555;
+    
+}
+body{
+    background-var:(color) ;
+    color: var(#555);
+    transition: background 0.8s, color 0.8s;
+}
+.header{
+    width: 100%;
+    min-height: 100vh;
+    padding: 0 8%;
+    position: relative;
+    overflow: hidden;
+}
+nav{
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+}
+.logo img{
+    width: 80px;
+}
+nav ul{
+    width: 100%;
+    text-align: right;
+    list-style: none;
+    margin-right: 50px;
+}
+nav ul li{
+    display: inline-block;
+    margin: 5px 15px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: red;
+    font-size: 20px;
+
+    font-weight: bold;
+}
+.toggle-btn{
+    background: #4864f4;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 40px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.toggle-btn img{
+    width: 25px;
+    margin-left: 10px;
+
+}
+.content{
+    margin-top: 10%;
+    max-width: 600px;
+
+}
+.content h1{
+    font-size: 37px;
+    color: red;
+    font-weight: 600;
+
+}
+.dark-theme{
+    background-color: black;
+    color: #999;
+
+}
+.content h1 span{
+    font-family: serif;
+    font-weight: 400;
+    font-style: italic;
+
+}
+.content a{
+    background: #4864ff;
+    color: #fff;
+    padding: 15px 70px;
+    border-radius: 30px;
+    cursor: pointer;
+    display: inline-block;
+    margin-top: 30px;
+    text-decoration: none;
+
+}
+.image-box img{
+    width: 700px;
+    display: block;
+}
+.image-box{
+    position: absolute;
+    bottom: 500px;
+    right: 15%;
+}
+.about-img {
+    position: relative;
+    overflow: hidden;
+}
+
+.about-img::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: url(./img/img/bg-about-img.png) top left no-repeat;
+    background-size: contain;
+}
+#about-section{
+    background-color: black;
+}

@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>theme website</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    .about-img {
+    position: relative;
+    overflow: hidden;
+   
+}
+
+.about-img::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: url(./img/img/bg-about-img.png) top left no-repeat;
+    background-size: contain;
+}
+#about{
+    background-color: aqua;
+    transition: background 0.8s, color 0.8s;
+
+}
+#anchor,  #anchor1 ,#anchor2, #anchor3{
+  transition: background 0.8s, color 0.8s;
+
+
+}
+#mq{
+  font-weight: bold;
+  color: red;
+  font-size: 20px;
+  box-shadow: 3px 3px 4px 4px red;
+  padding: 10px;
+  transition: background 0.8s, color 0.8s;
+
+}
+#btn:hover{
+  background-color: yellow;
+  color: black;
+}
+</style>
+<body>
+  <marquee id="mq" behavior="" direction="">WELCOME TO TOYOTA PAKISTAN</marquee>
+    <div class="header">
+        <nav>
+            <a href="" class="logo"><img src="logo.png" alt=""></a>
+            <ul>
+                <li><a id="anchor" href="">Home</a></li>
+                <li><a id="anchor1" href="">About</a></li>
+                <li><a id="anchor2" href="">Contact</a></li>
+                <li><a id="anchor3" href="">Services</a></li>
+            </ul>
+            <div class="toggle-btn" id="btn">
+                <span id="btnText">DARK</span>
+                <img src="moon.png" id="btnIcon">
+            </div>
+        </nav>
+
+        <div class="content">
+            <h1>ADVENTURE AWAITS BUCKEL UP!</h1>
+            <h1><span></span> ALL NEW MODELS</h1>
+            <p>Toyota does have plans for an all new-gen Fortuner, we expect that to come in late 2024 or early 2025. This will not be called as the Fortuner 2024, it might be called as new Toyota Fortuner 2025 – it will be an all new SUV, more features and Fortuner hybrid engines will be ready too – mostly.</p>
+            <a href="">READ MORE!</a>
+        </div>
+
+        <div class="image-box">
+            <img src="car.png">
+            <div class="pattern">
+                <img src="" alt="">
+            </div>
+        </div>
+    </div>
+
+        <!-- About Start -->
+           
+        <div id="about" class="container-fluid py-5" style="position: relative; bottom: 300px;">
+            <div class="container">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                        <div class="about-img">
+                            <img class="img-fluid" src="insecprtion.png">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                        <!-- <div class="btn btn-sm border rounded-pill text-primary px-3 mb-3" style="color: white;">About Us</div> -->
+                        <h1 class="mb-4" style="color: white;">Toyota Corolla 2024 Overview</h1>
+                        <p class="mb-4" style="color: white;">The price of Toyota Corolla 2024 in Pakistan ranges from PKR 6,169,000 for the base variant Altis X Manual 1.6 to PKR 7,799,000 for the top of the line Altis Grande X CVT-i 1.8 Black Interior variant.</p>
+                        <p class="mb-4" style="color: white;">Toyota has done some minor changes in the 1.8 (2ZR- FAE) Engine to produce more power output from the same engine used in  the previous engine it is also expected that Toyota will discontinue the XLi/GLi variant to introduce Toyota Vios in Pakistan.</p>
+                        <div class="row g-3" >
+                            <div class="col-sm-6">
+                                <h6 class="mb-3" style="color: white;"><i class="fa fa-check text-primary me-2"></i>ENGINE</h6>
+                                <h6 class="mb-0" style="color: white;"><i class="fa fa-check text-primary me-2"></i>SUSPENSION</h6>
+                            </div>
+                            <div class="col-sm-6">
+                                <h6 class="mb-3" style="color: white;"><i class="fa fa-check text-primary me-2"></i>INTERIOR</h6>
+                                <h6 class="mb-0" style="color: white;"><i class="fa fa-check text-primary me-2"></i>EXTERIOR</h6>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center mt-4">
+                            <a class="btn btn-primary rounded-pill px-4 me-3" href="" style="color: white;">Read More</a>
+                            <a class="btn btn-outline-primary btn-square me-3" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-primary btn-square me-3" href=""><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-outline-primary btn-square me-3" href=""><i class="fab fa-instagram"></i></a>
+                            <a class="btn btn-outline-primary btn-square" href=""><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About End -->
+
+    <!-- CARD START  -->
+    <div id="container-card" class="container">
+      <h2 class="text-center p-3">FORTUNER GR-S</h2>
+
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card" style="width: 18rem;">
+              <img src="https://startuppakistan.com.pk/wp-content/uploads/2021/06/banner1.jpg" class="card-img-top"
+                alt="...">
+                <div class="card-body">
+                  <h5 class="card-title text-center fw-italic">Color white</h5>
+                  <p class="card-text fw-bold text-center" >PRICE : 19,899,999/-</p>
+                  <p  class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, labore.</p>
+                  <a href="#" class="btn btn-primary me-auto" style="position: relative; left: 55px;">READ MORE!</a>
+                </div>
+            </div>
+          </div>
+    
+          <div class="col-md-4">
+            <div class="card" style="width: 18rem;">
+              <img src="https://www.bolnews.com/wp-content/uploads/2023/10/FotoJet-2023-10-28T130259.713-635x430.jpg"
+                class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title text-center fw-italic">Color black</h5>
+                <p class="card-text fw-bold text-center" >PRICE : 14,499,000/-</p>
+                <p  class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, labore.</p>
+                <a href="#" class="btn btn-primary me-auto" style="position: relative; left: 55px;">READ MORE!</a>
+              </div>
+            </div>
+          </div>
+    
+          <div class="col-md-4">
+            <div class="card" style="width: 18rem;">
+              <img
+                src="https://www.financialexpress.com/wp-content/uploads/2020/12/2021-Toyota-Fortuner-Facelift-India-Launch-jan-6.jpg"
+                class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title text-center fw-italic">Color blue</h5>
+                  <p class="card-text fw-bold text-center" >PRICE : 16,999,000/-</p>
+                  <p  class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, labore.</p>
+                  <a href="#" class="btn btn-primary me-auto" style="position: relative; left: 55px;">READ MORE!</a>
+                </div>
+            </div>
+          </div>
+    
+
+          <h2 class="text-center p-3">COROLLA ALTIS X OPTION</h2>
+          <div class="col-md-4">
+            <div class="card" style="width: 18rem;">
+              <img src="https://imagecdnsa.zigwheels.ae/large/gallery/exterior/40/417/toyota-corolla-front-side-view-345076.jpg"
+                class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title text-center fw-italic">Color white</h5>
+                  <p class="card-text fw-bold text-center" >PRICE : 5,969,000/-</p>
+                  <p  class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, labore.</p>
+                  <a href="#" class="btn btn-primary me-auto" style="position: relative; left: 55px;">READ MORE!</a>
+                </div>
+            </div>
+          </div>
+    
+          <div class="col-md-4">
+            <div class="card" style="width: 18rem;">
+              <img src="https://www.grcorollaforum.com/attachments/screenshot_20220401-223314-png.1110/" class="card-img-top"
+                alt="...">
+                <div class="card-body">
+                  <h5 class="card-title text-center fw-italic">Color black</h5>
+                  <p class="card-text fw-bold text-center" >PRICE : 6,559,000/-</p>
+                  <p  class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, labore.</p>
+                  <a href="#" class="btn btn-primary me-auto" style="position: relative; left: 55px;">READ MORE!</a>
+                </div>
+            </div>
+          </div>
+    
+          <div class="col-md-4">
+            <div class="card" style="width: 18rem;">
+              <img src="https://blog-cdn.el.olx.com.pk/wp-content/uploads/2022/10/11131217/Toyota-Corolla-12th-gen-O.jpg"
+                class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title text-center fw-italic">Color WHITE</h5>
+                  <p class="card-text fw-bold text-center" >PRICE : 7,189,000/-</p>
+                  <p  class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, labore.</p>
+                  <a href="#" class="btn btn-primary me-auto" style="position: relative; left: 55px;">READ MORE!</a>
+                </div>
+            </div>
+          </div>
+    
+
+          <h2 class="text-center p-3">CROSS HYBRID ELECTRIC</h2>
+          <div class="col-md-4">
+            <div class="card" style="width: 18rem;">
+              <img
+                src="https://lh3.googleusercontent.com/proxy/-q9kCPje5KcqJael0hsGk4JFw17OObsowZBBtU_9N0Pdn6ZHNBO0Mf2KFjwe7jb3W7GGnYcvzbcVYRYxigMLNC3jNw2mraM_Y2kbeyNqnQ2TEEpmgvrapIJ6V0vAEpk"
+                class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title text-center fw-italic">Color white</h5>
+                  <p class="card-text fw-bold text-center" >PRICE : 20,999,000/-</p>
+                  <p  class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, labore.</p>
+                  <a href="#" class="btn btn-primary me-auto" style="position: relative; left: 55px;">READ MORE!</a>
+                </div>
+            </div>
+          </div>
+    
+          <div class="col-md-4">
+            <div class="card" style="width: 18rem;">
+              <img
+                src="https://humnews.pk/wp-content/uploads/2023/08/Toyota-Corolla-Cross.jpg"
+                class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title text-center fw-italic">Color RED</h5>
+                  <p class="card-text fw-bold text-center" >PRICE : 23,989,000/-</p>
+                  <p  class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, labore.</p>
+                  <a href="#" class="btn btn-primary me-auto" style="position: relative; left: 55px;">READ MORE!</a>
+               
+
+                </div>
+            </div>
+          </div>
+    
+          <div class="col-md-4">
+            <div class="card" style="width: 18rem;">
+              <img
+                src="https://di-uploads-pod20.dealerinspire.com/performancetoyotapa/uploads/2022/08/2023-Toyota-Corolla-Cross-Hybrid-Model-Left.jpg"
+                class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title text-center fw-italic">Color Silver</h5>
+                  <p class="card-text fw-bold text-center" >PRICE : 19,999,000/-</p>
+                  <p  class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, labore.</p>
+
+                  <a href="#" class="btn btn-primary me-auto" style="position: relative; left: 55px;">READ MORE!</a>
+           
+                </div>
+            </div>
+          </div>
+
+          <h2 class="text-center p-3">COROLLA SX HYBRID AUTO</h2>
+    
+          <div class="col-md-4">
+            <div class="card" style="width: 18rem;">
+              <img src="https://i.ytimg.com/vi/Zht59ubxUic/maxresdefault.jpg"
+                class="card-img-top" alt="...">
+                <div class="card-body" style="height: 288px;">
+                  <h5 class="card-title text-center fw-italic">Color Blue</h5>
+                  <p class="card-text fw-bold text-center" >PRICE : 13,899,000/-</p>
+                  <p  class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, labore.</p>
+                  <a href="#" class="btn btn-primary me-auto" style="position: relative; left: 55px;">READ MORE!</a>
+
+                </div>
+            </div>
+          </div>
+    
+          <div class="col-md-4">
+            <div class="card" style="width: 18rem;">
+              <img
+                src="https://di-uploads-pod44.dealerinspire.com/nyetoyota/uploads/2023/06/2024-toyota-corolla-nightshade-special-edition-1.jpg"
+                class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title text-center fw-italic">Color black</h5>
+                  <p class="card-text fw-bold text-center" >PRICE : 10,999,000/-</p>
+                  <p  class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, labore.</p>
+                  <a href="#" class="btn btn-primary me-auto" style="position: relative; left: 55px;">READ MORE!</a>
+
+                </div>
+            </div>
+          </div>
+    
+          <div class="col-md-4">
+            <div class="card" style="width: 18rem;">
+              <img src="https://vehicle-images.dealerinspire.com/773f-11000429/5YFEPMAE8MP162263/e6e4b90c572a2c8eded3921e13b4b2cb.jpg"
+                class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title text-center fw-italic">Color RED</h5>
+                  <p class="card-text fw-bold text-center" >PRICE : 13,856,999/-</p>
+                  <p  class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, labore.</p>
+                  <a href="#" class="btn btn-primary me-auto" style="position: relative; left: 55px;">READ MORE!</a>
+
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Remove the container if you want to extend the Footer to full width. -->
+<div class="container my-5" style="position: relative; right: 310px; top: 49px;">
+
+  <footer class="bg-dark text-center text-white" style="width: 1910px;">
+  <!-- Grid container -->
+  <div class="container p-4 pb-0">
+    <!-- Section: Social media -->
+    <section class="mb-4">
+      <!-- Facebook -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-facebook-f"></i
+      ></a>
+
+      <!-- Twitter -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-twitter"></i
+      ></a>
+
+      <!-- Google -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-google"></i
+      ></a>
+
+      <!-- Instagram -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-instagram"></i
+      ></a>
+
+      <!-- Linkedin -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-linkedin-in"></i
+      ></a>
+
+      <!-- Github -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-github"></i
+      ></a>
+    </section>
+    <!-- Section: Social media -->
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2024 Copyright:
+    <a class="text-white" href="" style="text-decoration: none;">INDUS MOTOR COMPANY LTD ALL RIGHTS</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+  
+</div>
+<!-- End of .container -->
+    <!-- CARD END -->
+<script src="./app.js"></script>
+</body>
+</html>
